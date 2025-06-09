@@ -1,0 +1,224 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "模板市场",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/asset/index",
+      "style": {
+        "navigationBarTitleText": "资产"
+      }
+    },
+    {
+      "path": "pages/works/index",
+      "style": {
+        "navigationBarTitleText": "作品"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    },
+    {
+      "path": "pages/avatar/index",
+      "style": {
+        "navigationBarTitleText": "我的数字人"
+      }
+    },
+    {
+      "path": "pages/avatar/create",
+      "style": {
+        "navigationBarTitleText": "创建数字人"
+      }
+    },
+    {
+      "path": "pages/avatar/detail",
+      "style": {
+        "navigationBarTitleText": "数字人详情"
+      }
+    },
+    {
+      "path": "pages/avatar/edit",
+      "style": {
+        "navigationBarTitleText": "编辑数字人"
+      }
+    },
+    {
+      "path": "pages/avatar/clone",
+      "style": {
+        "navigationBarTitleText": "一键分身",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none",
+          "pullToRefresh": {
+            "support": false
+          },
+          "softinputMode": "adjustResize",
+          "popGesture": "close"
+        },
+        "h5": {
+          "titleNView": false,
+          "pullToRefresh": false,
+          "navigationBarTextStyle": "white"
+        },
+        "disableScroll": true,
+        "tabBar": {
+          "hide": true
+        }
+      }
+    },
+    {
+      "path": "pages/avatar/use",
+      "style": {
+        "navigationBarTitleText": "使用数字人"
+      }
+    },
+    {
+      "path": "pages/voice/index",
+      "style": {
+        "navigationBarTitleText": "声音克隆"
+      }
+    },
+    {
+      "path": "pages/voice/create",
+      "style": {
+        "navigationBarTitleText": "创建声音"
+      }
+    },
+    {
+      "path": "pages/voice/edit",
+      "style": {
+        "navigationBarTitleText": "编辑声音"
+      }
+    },
+    {
+      "path": "pages/voice/use",
+      "style": {
+        "navigationBarTitleText": "使用声音"
+      }
+    },
+    {
+      "path": "pages/voice/upload",
+      "style": {
+        "navigationBarTitleText": "声音上传",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none",
+          "pullToRefresh": {
+            "support": false
+          }
+        },
+        "h5": {
+          "titleNView": false,
+          "pullToRefresh": false,
+          "navigationBarTextStyle": "white"
+        },
+        "tabBar": {
+          "hide": true
+        }
+      }
+    },
+    {
+      "path": "pages/market/index",
+      "style": {
+        "navigationBarTitleText": "形象市场",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none",
+          "pullToRefresh": {
+            "support": false
+          }
+        },
+        "h5": {
+          "titleNView": false,
+          "pullToRefresh": false,
+          "navigationBarTextStyle": "white"
+        },
+        "tabBar": {
+          "hide": true
+        }
+      }
+    },
+    {
+      "path": "pages/market/detail",
+      "style": {
+        "navigationBarTitleText": "资产详情"
+      }
+    },
+    {
+      "path": "pages/ai-writing/index",
+      "style": {
+        "navigationBarTitleText": "AI文案创作",
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "bounce": "none",
+          "pullToRefresh": {
+            "support": false
+          }
+        },
+        "h5": {
+          "titleNView": false,
+          "pullToRefresh": false,
+          "navigationBarTextStyle": "white"
+        },
+        "tabBar": {
+          "hide": true
+        }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "模板市场",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8",
+    "app-plus": {
+      "background": "#efeff4"
+    }
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#35c8a9",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabbar/home.png",
+        "selectedIconPath": "static/images/tabbar/home-active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/asset/index",
+        "iconPath": "static/images/tabbar/asset.png",
+        "selectedIconPath": "static/images/tabbar/asset-active.png",
+        "text": "资产"
+      },
+      {
+        "pagePath": "pages/works/index",
+        "iconPath": "static/images/tabbar/works.png",
+        "selectedIconPath": "static/images/tabbar/works-active.png",
+        "text": "作品"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/images/tabbar/my.png",
+        "selectedIconPath": "static/images/tabbar/my-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "easycom": {
+    "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+  }
+} 

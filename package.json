@@ -1,0 +1,30 @@
+{
+  "name": "szr-h5",
+  "version": "1.0.0",
+  "description": "Template Market H5 Version",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev:h5": "uni -p h5 --host",
+    "dev:mp-weixin": "uni -p mp-weixin",
+    "build:h5": "uni build -p h5",
+    "build:mp-weixin": "uni build -p mp-weixin"
+  },
+  "dependencies": {
+    "@dcloudio/uni-app": "^3.0.0-alpha-4060720250515001",
+    "uview-ui": "^2.0.31",
+    "vue": "^3.4.21",
+    "vue-router": "^4.2.5",
+    "pinia": "^2.1.7",
+    "axios": "^1.6.7"
+  },
+  "devDependencies": {
+    "@dcloudio/uni-cli-shared": "^3.0.0-alpha-4060720250515001",
+    "@dcloudio/vite-plugin-uni": "^3.0.0-alpha-4060720250515001",
+    "@vitejs/plugin-vue": "^5.1.0",
+    "@vue/compiler-sfc": "^3.4.21",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "vite": "^5.2.8"
+  }
+} 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SZR H5</title>
+    <!-- 在 head 中定义全局 uni 对象，确保它在所有脚本之前加载 -->
+    <script>
+      window.uni = window.uni || {
+        getStorageSync: function(key) { return localStorage.getItem(key); },
+        setStorageSync: function(key, value) { localStorage.setItem(key, value); },
+        removeStorageSync: function(key) { localStorage.removeItem(key); },
+        showToast: function(options) {
+          console.log('Toast:', options.title);
+          var toast = document.createElement('div');
+          toast.style.position = 'fixed';
+          toast.style.top = '50%';
+          toast.style.left = '50%';
+          toast.style.transform = 'translate(-50%, -50%)';
+          toast.style.padding = '10px 20px';
+          toast.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+          toast.style.color = '#fff';
+          toast.style.borderRadius = '5px';
+          toast.style.zIndex = '9999';
+          toast.textContent = options.title;
+          document.body.appendChild(toast);
+          setTimeout(function() {
+            document.body.removeChild(toast);
+            if (options.success) options.success();
+          }, options.duration || 1500);
+        }
+      };
+      // 初始化 $u 对象
+      window.uni.$u = {};
+    </script>
+    <script type="module" crossorigin src="/assets/index-DDlqzt3H.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DaIWnDRF.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html> 
